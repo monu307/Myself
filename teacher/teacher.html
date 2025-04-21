@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!--  **********   teacher/teacher.html   **********  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be A Teacher</title>
+    <!--! ============ My CSS ============== -->
+    <link rel="stylesheet" href="teacher.css" />
+
+    <!--! ============ CSS for Font Awesome============== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <!--! ============ CSS for Bootstrap ============== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--! ============ Navbar ============== -->
+    <!-- As a link -->
+    <div class="my-nav">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/Home/index.html"
+            ><i class="fa-solid fa-house"></i>Home</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Teacher</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">How it works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Course Curriculum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#form" aria-disabled="true"
+                  >Apply Now</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- !--------- Hero Section --------------- -->
+    <div class="hero-section">
+      <div class="left">
+        <h1>Join us at Bright Future</h1>
+        <p>
+          This is your chance to give back to the community - help to teach
+          Bright Future students to help them get job ready.
+        </p>
+        <button onclick="window.location.href='#form'">Apply Now</button>
+      </div>
+      <div class="right">
+        <img src="hero-right.jpg" alt="" />
+      </div>
+    </div>
+    <div class="desc">
+      <h1>Bright Future Teaching Assistant (TA) Program</h1>
+      <p>
+        We are building Bright Future with a core mission of helping people
+        unlock their true potential so they could land the better tech jobs they
+        actually deserve. We cannot do it just by ourselves - we are looking for
+        the like-minded people who believe in the same mission.
+      </p>
+      <p>
+        Teaching Assistants are a crucial part of the Bright Future community -
+        they are helping students to achieve their goals by coaching them on the
+        program material and making sure that the students are on the correct
+        learning path.
+      </p>
+    </div>
+    <div class="why-TA">
+      <h1>Why become a TA?</h1>
+      <div>
+        <img src="img/growth.jpg" alt="" />
+        <img src="img/network.jpg" alt="" />
+        <img src="img/income.jpg" alt="" />
+      </div>
+    </div>
+    <div class="work" id="work">
+      <h1>How it works</h1>
+      <img src="img/works.jpg" alt="" />
+    </div>
+    <div class="hero-section">
+      <div class="left left2">
+        <h1>Join our team</h1>
+        <ul>
+          <li>Flexible work. No fixed work hours / days.</li>
+          <li>Competitive compensation.</li>
+          <li>Opportunity to join Bright Future full-time.</li>
+        </ul>
+      </div>
+      <div class="right">
+        <img src="img/hero4.jpg" alt="" />
+      </div>
+    </div>
+    <!-- ------------ Trying ----------  -->
+    <div id="about">
+      <h1>Course curriculum</h1>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <div class="tab-titles">
+              <div
+                class="tab-links active-link boxes"
+                onclick="opentab('skills')"
+              >
+                <h4>Week 01-14</h4>
+              </div>
+              <div class="tab-links boxes" onclick="opentab('experience')">
+                <h4>Week 15-17</h4>
+              </div>
+              <div class="tab-links boxes" onclick="opentab('education')">
+                <h4>Week 18-24</h4>
+              </div>
+              <div class="tab-links boxes" onclick="opentab('final')">
+                <h4>Week 25-30</h4>
+              </div>
+            </div>
+          </div>
+          <div class="about-col-2">
+            <div class="tab-contents active-tab" id="skills">
+              <div class="weeks-box week">Week 01-06</div>
+              <div class="weeks-box text">
+                Maths, Time Complexity, Arrays, Strings, Binary Search, 2
+                Pointers, Recursion, Hashing, Sorting, Bit manipulation
+              </div>
+              <div class="weeks-box week">Week 07-10</div>
+              <div class="weeks-box text">
+                Stacks, Queues, Linked Lists, Trees, Tries, Heap
+              </div>
+              <div class="weeks-box week">Week 11-14</div>
+              <div class="weeks-box text">
+                Greedy, Dynamic Programming, Graphs
+              </div>
+            </div>
+            <div class="tab-contents" id="experience">
+              <div class="weeks-box week">Week 15-16</div>
+              <div class="weeks-box text">Operating Systems and Databases</div>
+              <div class="weeks-box week">Week 17</div>
+              <div class="weeks-box text">Computer Networks</div>
+            </div>
+            <div class="tab-contents" id="education">
+              <div class="weeks-box week">Week 18-20</div>
+              <div class="weeks-box text">
+                Low Level Design - OOPS, Design Patterns, UML Diagrams, Schema
+                Design
+              </div>
+              <div class="weeks-box week">Week 21-22</div>
+              <div class="weeks-box text">
+                High Level Design - Architecture Design, Distributed Systems,
+                Load Balancing, Consistent Hashing, Caching, SQL vs NoSQL,
+                Designing Real Life Systems
+              </div>
+              <div class="weeks-box week">Week 23-24</div>
+              <div class="weeks-box text">
+                Shell Scripting, Version Control, Javascript, Building a sever,
+                Intro to MVC
+              </div>
+            </div>
+            <div class="tab-contents" id="final">
+              <div class="weeks-box week">Week 25-26</div>
+              <div class="weeks-box text">
+                Web architecture, HTML, CSS, Javascript
+              </div>
+              <div class="weeks-box week">Week 27-28</div>
+              <div class="weeks-box text">
+                Node.js, Backend Architecture, MongoDB, React/Redux
+              </div>
+              <div class="weeks-box week">Week 29-30</div>
+              <div class="weeks-box text">Project Building</div>
+              <div class="weeks-box jobs">
+                <i class="fa-solid fa-briefcase"></i>Engineer Jobs
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------- Application Form ----------------- -->
+    <div class="form-container" id="form">
+      <div class="form">
+        <h1>Ready to join as a Teaching assistant?</h1>
+        <form onsubmit="ack()" name="submit-to-google-sheet">
+          <label for="name">Full Name <span>*</span></label>
+          <input
+            type="text"
+            name="Name"
+            placeholder="Enter your name"
+            required
+          />
+          <label for="email">Email <span>*</span></label>
+          <input
+            type="email"
+            name="Email"
+            placeholder="example@domain.com"
+            required
+          />
+          <label for="phone">Phone Number <span>*</span></label>
+          <input
+            type="text"
+            name="Mobile"
+            placeholder="Enter Mobile Number"
+            required
+          />
+          <label for="graduation">Year of Graduation <span>*</span> </label>
+          <select id="year" name="Graduation" required>
+            <!-- Options for years will be dynamically populated -->
+          </select>
+          <label for="expertice">Subject of Expertise <span>*</span></label>
+          <select name="Expertice" id="" required>
+            <option value="0">Select your subject of Expertice</option>
+            <option value="1">DSA</option>
+            <option value="2">Data Science</option>
+            <option value="3">Web Development</option>
+          </select>
+          <label for="employed">Current Employer <span>*</span></label>
+          <input
+            type="text"
+            name="Company"
+            placeholder="Enter company name"
+            required
+          />
+          <label for="resume">Resume <span>*</span></label>
+          <input type="file" class="resume" name="Resume" required />
+          <div>
+            <input
+              type="checkbox"
+              class="terms"
+              id="terms"
+              name="Terms"
+              required
+            />
+            <label for="terms"
+              >By clicking Send Application, I have read and agree Terms and
+              Privacy Policy</label
+            >
+          </div>
+          <button type="submit">Send Application</button>
+        </form>
+      </div>
+      <img src="img/teacher.jpg" alt="" />
+    </div>
+    <footer>
+      <i class="fa-brands fa-teamspeak"></i>
+      <p>Need Help? Talk to us at 01205096014</p>
+    </footer>
+    <!-- ---------- Google Form -----------  -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwtJ_VYOMwph6WFSr2mnCzpgkc4vHLlsLvlU0YTOBya4N1s0M2BZHJqgvT6T8LZSPmY/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <!-- -------- Script ------------  -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      const selectYear = document.getElementById("year");
+      const currentYear = new Date().getFullYear();
+      const yearsToShow = 40; // You can adjust this as needed
+
+      for (let i = 0; i < yearsToShow; i++) {
+        const option = document.createElement("option");
+        option.value = currentYear - i;
+        option.textContent = currentYear - i;
+        selectYear.appendChild(option);
+      }
+    </script>
+    <script>
+      function ack() {
+        alert(
+          "Thanku!! Your Application is sent successfully. Our team will contact you soon for further process."
+        );
+      }
+    </script>
+    <script src="teacher.js"></script>
+  </body>
+</html>

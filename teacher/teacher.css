@@ -1,0 +1,291 @@
+/* <!--  **********   teacher/teacher.css   **********  --> */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.body {
+  position: relative;
+}
+.my-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1999;
+  font-size: 20px;
+  box-shadow: -5px -5px 30px rgb(133, 128, 128);
+}
+.my-nav i {
+  padding-right: 10px;
+}
+.navbar-brand img {
+  height: 50px;
+}
+/* <!-- !--------- Hero Section --------------- --> */
+.hero-section {
+  height: 420px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+.hero-section .left {
+  height: 420px;
+  flex-basis: 50%;
+  background: url("hero-left.jpg");
+  background-size: cover;
+  overflow: hidden;
+  color: white;
+  padding: 100px;
+}
+.hero-section .left button {
+  margin: 10px 0;
+  padding: 10px 40px;
+  border-radius: 30px;
+  border: none;
+  background: #fc3859;
+  transition: background 0.5s;
+  color: white;
+}
+.hero-section .left button:hover {
+  background: #ff0071;
+}
+.hero-section .right {
+  flex-basis: 50%;
+}
+
+.desc {
+  background: white;
+  width: 100%;
+  padding: 60px 100px;
+}
+.desc h1 {
+  padding-bottom: 20px;
+}
+/* -------- Why TA    -------------- */
+.why-TA {
+  height: 400px;
+  background: #f8faff;
+  padding: 20px 100px;
+}
+.why-TA div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.why-TA img {
+  border: 1px solid white;
+  box-shadow: -1px -1px 20px gray;
+}
+
+/* ----------- Works ---------------- */
+.work {
+  padding: 20px 100px;
+  background: white;
+}
+
+.left.left2 {
+  background: #f2f7f0;
+  color: black;
+}
+.left.left2 ul li {
+  padding-top: 20px;
+}
+
+/* ----------- Course curriculum ---------------  */
+#about {
+  padding: 80px 0px;
+  color: #ababab;
+  height: auto;
+}
+#about h1 {
+  padding-left: 100px;
+  color: black;
+  padding-bottom: 20px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1 {
+  flex-basis: 25%;
+  background: #e5e9f2;
+}
+.about-col-1 h4 {
+  font-weight: 600;
+}
+.about-col-2 {
+  padding: 20px 10px;
+  flex-basis: 74%;
+  color: black;
+}
+.tab-titles {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 60px;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after {
+  width: 50%;
+}
+.tab-contents .weeks-box {
+  border: 1px solid #5a86ee;
+  padding: 20px 2px;
+  padding-left: 10px;
+  margin: 10px 0;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+}
+.weeks-box.week {
+  font-weight: 700;
+}
+.weeks-box.text {
+  color: #787e96;
+}
+.weeks-box.jobs {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weeks-box.jobs i {
+  padding: 10px;
+  border-radius: 50%;
+  background: #5a86ee;
+  color: white;
+  margin-right: 10px;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+.boxes {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: black;
+  margin: 5px 0;
+  padding-top: 5px;
+  border-radius: 20px;
+  box-shadow: -1px -1px 10px gray;
+  transition: background 0.5s;
+}
+.boxes:hover {
+  background: lavender;
+}
+/* -------------- Application form --------------  */
+.form-container {
+  display: flex;
+}
+.form h1 {
+  margin-left: 100px;
+}
+.form form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 20px;
+  margin-left: 100px;
+}
+.form form input,
+.form form select {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(218, 204, 204);
+  padding-left: 10px;
+  transition: border 0.5s;
+  outline: none;
+}
+.form form input:hover {
+  border: 2px solid blue;
+}
+.form form select:hover {
+  border: 2px solid blue;
+  cursor: pointer;
+}
+.form .resume {
+  width: 250px;
+  padding-top: 4px;
+}
+.form .terms {
+  width: 20px;
+  border: 1px solid rgb(218, 204, 204);
+}
+.form div {
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+  align-items: center;
+}
+.form button {
+  margin: 10px 130px;
+  height: 50px;
+  width: 40%;
+  border-radius: 30px;
+  background: #5a86ee;
+  border: none;
+  font-weight: 700;
+  color: white;
+}
+.form span {
+  color: #ff0071;
+  font-size: 20px;
+}
+footer {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e95d75;
+  font-size: 20px;
+}
+footer p {
+  padding-top: 14px;
+  padding-left: 10px;
+}
+.steps {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  position: relative;
+  top: -100px;
+}
+.steps h1 {
+  padding: 10px 40px;
+}
+.steps img {
+  border-radius: 10px;
+}
+.form-container img {
+  margin-top: 100px;
+  margin-right: 70px;
+  height: 30%;
+}
